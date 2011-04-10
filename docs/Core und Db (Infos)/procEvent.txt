@@ -1,0 +1,16 @@
+1 Enter Combat
+2 Leave Combat
+3 Damage Taken
+4 Target Parried
+5 Target Dodged
+6 taret Blocked
+7 Target Critical Hit
+8 Target Died
+9 Target Died
+10 Unit Parried
+11 Unit Dodged
+12 Unit Blocked
+13 Unit Critical Hit
+14 Unit Died
+15 Assist Target Died
+16 Follow Owner

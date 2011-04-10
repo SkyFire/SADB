@@ -1,0 +1,11 @@
+1 Root
+2 Heal
+3 Stun
+4 Fear
+5 Silence
+6 Curse
+7 AOE Damage
+8 Damage
+9 Summon
+10 Buff
+11 Debuff

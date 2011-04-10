@@ -1,0 +1,10 @@
+	####################################
+	#######      Sandshroud      #######
+	######         Aspire         ######
+	######        Database        ######
+	#######     Development      #######
+	####################################
+	
+- add vehicles data
+- make cleanup in ai_agents (remove data with wrong spell data)
+- fix dk zone.

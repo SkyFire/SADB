@@ -1,0 +1,5 @@
+0 Normal	= 0
+1 Elite		= 1
+2 Elite-Rare	= 2
+3 Boss		= 3
+4 Rare		= 4

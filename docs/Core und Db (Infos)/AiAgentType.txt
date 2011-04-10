@@ -1,0 +1,5 @@
+1 Melee
+2 Ranged
+3 Flee
+4 Spell
+5 Call For help

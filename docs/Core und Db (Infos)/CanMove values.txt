@@ -1,0 +1,15 @@
+can move values:
+
+
+	LIMIT_ROOT		= 0,
+	LIMIT_GROUND		= 1,
+	LIMIT_WATER		= 2,
+	LIMIT_AIR		= 4,
+	LIMIT_ON_OBJ		= 8,
+
+how to calculate? simple, 
+npc can move on all: 1 + 2 + 4 = 7
+npc can move only on ground and in water: 1+2=3
+npc can move in air and on ground: 1+4=5
+and etc.
+

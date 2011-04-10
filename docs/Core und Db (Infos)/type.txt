@@ -1,0 +1,7 @@
+0  <NONE>      =0 
+1  Elite       =1 
+21 Life        =21
+41 PvP         =41
+62 Raid        =62
+81 Dungeon     =81
+82 World Event =82

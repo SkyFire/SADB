@@ -1,0 +1,113 @@
+Supported game version: 3.3.5a build 13240 
+#---------------------------------------------------------------------------------------#
+#	CHANGESET CHANGES LOG & ADDITIONAL INFO						#
+#---------------------------------------------------------------------------------------#
+**************************************************************
+*		CHANGESET_3 - sandshroud r1104+
+**************************************************************
+-------------------------------------------------------
+- MAIN FIXES
+-------------------------------------------------------
+- some table structure changes
+- added missing profession discoveries
+- added vehicle data
+- added missing quests data
+- added darkshore waypoints
+- added cleanup data after arctraz cleanup
+- added missing creatureloot loot
+- added more equipment
+- fixed petspelldataid data
+- new damage, armor calculation.
+- new changeset import security
+- fixed some weather zones datas
+- big cleanup
+- fixed human start zone creatures waypoints
+- fixed minerals sizes, flags, states
+- fixed some creatures in dalaran data.
+- isle of queldanas cleanup
+- added few missing stormwing guards spawns.
+- fixed quest faction rewrepvalues
+- added "portal to blasted lands" in main cities
+- fixed mechanar exit areatrigger (4614)
+- some spawns corrections
+- removed some wrong spawns
+- fixed proffesor (icc) rank
+- added missing emote_states to icc spawns
+- removed emote_state from some creature_spawns in shattrath
+- fixed quest 24579
+- fixed NPC:Clara Charles npcflags data (she is no longer as vendor)]
+- fixed NPC:Dubin Clay <Plate Armor Merchant> 
+- updated some more creatures ranks
+- reworked npc 358858 items by official server information.
+- some creatures reputation updates (*_proto, *_spawns)
+- creature speed corrections
+- fixed NPC:Frostbrood Sentry (32767) faction, removed gossip
+- fixed NPC:Enraged Fleshrender(32770)
+- some missing items
+
+**************************************************************
+*		CHANGESET_2 - sandshroud r1069+
+**************************************************************
+-------------------------------------------------------
+- MAIN FIXES
+-------------------------------------------------------
+- respawned Black Temple
+- readded loot for Illidan Stormrage
+- corrected icc spawns + fixed small issues in their spawns (bytes)
+- added icc loot
+- added missing faction data
+- added missing fishing zones info
+- instance bosses data corrections, thanks for Terrorblade
+- fixed shadow labyrinth worldmap_info data
+- fixed GO:The Talon King's Coffer loot and spawn
+- removed some double data
+- fixed worldmap collumn position, thanks for firehunter and terrorblade for reporting
+- fixed missing action to paladins
+- removed non blizzlike graveyard, this shouldn't be here.
+- new recall data + few correction in insert statement of existing recalls
+- added Archmage Lan'dalock quests (this npc quests was updated after 3.3.0 changes, dalaran quests for emblems)
+- removed emote from "Shattrath Refugee" spawns
+- fixed flying creatures (thanks for whydb for information (creature_spawns.canfly collumn))
+- added new npc text data, big thanks for ytdb.
+- added chests cast_bar data
+- tables updates
+- fixed few map objects spawn, thanks for firehunter
+
+- added new table for creature default equipment
+- it will not loaded by core, but using function call you will be able to update equipment using call function
+- (sql query: call creature_equipment_proto; call creature_equipment_spawns; )
+- if some creature_spawns have different equipment - delete entry from this table
+- in this table simply will merged added new cequipments by udb team.
+
+- added new function for easer equipment update instead long query
+- use 
+
+- fixed creatures, which have equipments
+- as basically, npcs should show equipment in hand, when they have equipment
+
+- added user data security.
+
+
+**************************************************************
+*		CHANGESET_1 - sandshroud r904-941+
+**************************************************************
+- renamed "bytes" collumn to "bytes0" in creature_spawns
+- fixed console errors 
+- added missing quest_poi data (it also fixes console error)
+- added missing table
+- totemspells data
+- fixed icc vendors exploit
+- teleport_coords data, credits for udb & ytdb
+- some small stuff with gm island
+- respawned icc, credits for udb
+- removed wrong spawns from tanaris-gadgegztan area
+- fixed Tanaris main gryphon masters spawns
+- fixed crash related to Horace Hunderland vendor (thx for goku for reporting)
+- added waypoints for Seiren
+- fixed Donavan Bale spawn place
+- changed comment for table npc_monstersay
+
+------------------------------------------------------------------
+Clean FULL_DATABASE - sandshroud r904+
+
+------------------------------------------------------------------

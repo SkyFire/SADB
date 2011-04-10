@@ -1,0 +1,7 @@
+accoutflags:
+0 = pre-TBC
+1 = VIP
+2 = No Auto join of chat channels.
+8 = tbc
+16 = wow + wotlk (kein tbc)
+24 = wow + tbc + wotlk

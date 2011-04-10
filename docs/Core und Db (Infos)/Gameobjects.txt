@@ -1,0 +1,336 @@
+------------
+-- Type 0 --
+------------
+Type - A door.
+Sound0: startOpen
+Sound1: LockId from Lock.dbc
+Sound2: Possibly The time delay before the door closes
+Sound3: noDamageImmune
+Sound4: A reference to an object holding the Text to display upon opening the door
+Sound5: A reference to an object holding the Text to display upon closing the door
+------------
+-- Type 1 --
+------------
+Type - Open or close doors
+Sound0: startOpen
+Sound1: LockId from Lock.dbc
+Sound2: Possibly the time delay before the door auto-closes
+Sound3: EntryId of a GOTrapEntry linked to this button
+Sound4: noDamageImmune
+Sound5: large
+Sound6: A reference to an object holding the Text to display upon pressing the button
+Sound7: A reference to an object holding the Text to display upon unpressing the button
+Sound8: losOK
+------------
+-- Type 2 --
+------------
+Type - An object that can start or end a quest.
+Sound0: LockId from Lock.dbc
+Sound1: questList
+Sound2: PageId from PageTextMaterial.dbc
+Sound3: gossipID
+Sound4: customAnim (Constrained to values 1-4)
+Sound5: noDamageImmune
+Sound6: Reference to Text object containing the text to display upon interacting with this GO
+Sound7: losOK
+Sound8: Allow mounted players to interact with this object (?)
+Sound9: large
+
+------------
+-- Type 3 --
+------------
+Type - Chest
+Sound0: LockId from Lock.dbc
+Sound1: The Id of an object that hold the chest's loot information.
+Sound2: The time it takes until the chest restocks its loot.
+Sound3: consumable
+Sound4: The minimum number of times in a row this chest can be looted (for mining, herbalism, etc.)
+Sound5: The maximum number of times in a row this chest can be looted (for mining, herbalism, etc.)
+Sound6: Possibly the Id of an event to trigger on looting this chest (?)
+Sound7: The Id of a GOTrapEntry that is associated with this chest.
+Sound8: The Id of the quest this chest is associated with.
+Sound9: The minimum level a character can be in order to open this chest.
+Sound10: losOK
+Sound11: leaveLoot - Possibly, don't trigger a restock event unless the chest is looted completely (?)
+Sound12: Possibly, wether this chest can be looted during combat (?)
+Sound13: log loot - Possibly wether or not to log the looting of this chest (?)
+Sound14: The Id of a text object to display upon opening this chest.
+Sound15: Wether or not to apply the group looting rules to the looting of this chest.
+
+------------
+-- Type 4 --
+------------
+ This GOType is apprently unused.
+
+------------
+-- Type 5 -
+------------
+Type - Road signs(Like duskwood - north).
+Sound0: Show the floating tooltip for this object (?)
+Sound1: Wether or nor to show a highlight around this object (?)
+Sound2: serverOnly
+Sound3: large
+Sound4: Wether or not this object floats on water (?)
+Sound5: The Id of the quest required to be active in order to activate this object.
+
+------------
+-- Type 7 --
+------------
+just a chair
+
+------------
+-- Type 8 --
+------------
+Type - Spell Focus gameobjects.
+Sound0: The type of SpellFocus this is.
+Sound1: Caster must be within this distance of the object in order to cast the associated spell
+Sound2: GOEntry Id of the Trap-type GO linked to this SpellFocus.
+Sound3: serverOnly
+Sound4: Id of the quest this object is associated with.
+
+
+------------
+-- Type 9 --
+------------
+Type - Books and texts.
+Sound0: The Id of a PageText object that is associated with this object.
+Sound1: The LanguageId from Languages.dbc
+Sound2: The PageTextMaterialId from PageTextMaterial.dbc
+Sound3: Whether or not to allow interaction with this object while mounted.
+
+------------
+-- Type 10 -
+------------
+Type - Used for quests, starts events
+Sound0: LockId from Lock.dbc
+Sound1: The Id of the quest required to be active in order to interact with this goober.
+Sound2: The Id of an Event associated with this goober (?)
+Sound3: The time delay before this goober auto-closes after being opened (?)
+Sound4: customAnim
+Sound5: consumable
+Sound6: Time between allowed interactions with this goober (?)
+Sound7: The Id of a PageText object associated with this goober.
+Sound8: The LanguageId from Languages.dbc
+Sound9: The PageTextMaterialId from PageTextMaterial.dbc
+Sound10: The SpellId from Spells.dbc associated with this goober.
+Sound11: noDamageImmune
+Sound12: The Id of a GOTrapEntry associated with this goober.
+Sound13: large
+Sound14: The Id of a text object to be displayed when opening this goober (?)
+Sound15: The Id of a text object to be displayed when closing this goober (?)
+Sound16: losOK
+Sound17: Whether or not to allow interaction with this goober while mounted (?)
+
+
+------------
+-- Type 11 -
+------------
+Type - Transport(elevators and such)
+Sound0: when to pause (ms)
+Sound1: startOpen
+Sound2: autoClose
+
+------------
+-- Type 12 -
+------------
+Type - Gameobjects that does damage?
+Sound0: LockId from Lock.dbc
+Sound1: The radius within which the damage is applied (?)
+Sound2: The minimum damage done.
+Sound3: The maximum damage done.
+Sound4: The type of damage done.
+Sound5: The duration of the damaging effect (?)
+Sound6: The Id of a text object to be displayed when the AreaDamage starts. (?)
+Sound7: The Id of a text object to be displayed when the AreaDamage ends. (?)
+
+------------
+-- Type 13 -
+------------
+Type - Gameobjects that when you use them you get into a a intro screen
+Sound0: LockId from Lock.dbc
+Sound1: CinematicCameraId from CinematicCamera.dbc
+Sound2: The Id of an Event associated with this camera (?)
+Sound3: The Id of a text object associated with this camera (?)
+
+
+------------
+-- Type 14 -
+------------
+Type - A map object.
+This object has no associated Fields.
+
+------------
+-- Type 15 -
+------------
+Type - Transport
+Sound0: The TaxiPathId from TaxiPaths.dbc
+Sound1: The speed this object moves at.
+Sound2: The rate this object accelerates at.
+Sound3: The Id of an Event to call when this object is activated (?)
+Sound4: The Id of an Event to call when this object is deactivated (?)
+Sound5: transportPhysics
+Sound6: The Id of a Map this object is associated with (?)
+
+------------
+-- Type 16 -
+------------
+Type - Duel Flag
+This object has no associated Fields.
+
+------------
+-- Type 17 -
+------------
+Type - Fishing Node
+This object has no associated Fields.
+
+------------
+-- Type 18 -
+------------
+Type - Summoning Ritual
+Sound0: Number of people needed to active the spell
+Sound1: SpellId from Spells.dbc
+Sound2: SpellId from Spell.dbc
+Sound3: ritualPersistent
+Sound4: SpellId from Spells.dbc
+Sound5: casterTargetSpellTargets
+Sound6: Whether or not the Casters of this SummoningRitual are in the same Group (?)
+
+------------
+-- Type 19 -
+------------
+Type - Mailbox
+This object has no associated Fields.
+
+------------
+-- Type 20 -
+------------
+Type - ActionHouse
+Sound0: The AuctionHouseId from AuctionHouse.dbc
+
+------------
+-- Type 21 -
+------------
+Type - Guard Post (Not used anywhere, probably meant to be some "alarm" object that spawns creatures when you click it)
+Sound0: The Id of the creature associated with this guard post.
+Sound1: The number of creatures with Id = CreatureId in this guard post.
+
+------------
+-- Type 22 -
+------------
+Type - Gameobjects that contain spell and usually created by player spell(lightwell, portals and such)
+Sound0: The SpellId from Spells.dbc
+Sound1: The number of times this can cast the Spell with Id = SpellId.
+Sound2: Whether you must be in the same group as the caster to recieve the Spell effect.
+
+------------
+-- Type 23 -
+------------
+Type - Meeting Stone
+Sound0: The minimum level a character must be to activate this object.
+Sound1: The maximum level a character can be to activate this object.
+Sound2: The AreaId from AreaTable.dbc
+
+------------
+-- Type 24 -
+------------
+Type - Battleground Flag
+Sound0: LockId from Lock.dbc
+Sound1: SpellId from Spell.dbc
+Sound2: Activation radius (?)
+Sound3: SpellId from Spells.dbc
+Sound4: SpellId from Spells.dbc
+Sound5: noDamageImmune
+Sound6: Id of a text object that is shown when the object is activated (?)
+Sound7: losOK
+
+------------
+-- Type 25 -
+------------
+Type - Fishing holes
+Sound0: The activation radius (?)
+Sound1: Id of an object that stores the object's loot.
+Sound2: Minimum number of consecutive times this object can be "fished".
+Sound3: Maximum number of consecutive times this object can be "fished".
+Sound4: LockId from Lock.dbc
+
+------------
+-- Type 26 -
+------------
+Type - Battleground flag(when dropped)
+Sound0: LockId from Lock.dbc
+Sound1: Id for an Event that is triggered upon activating this object (?)
+Sound2: SpellId from Spells.dbc
+Sound3: noDamageImmune
+Sound4: Id for a text object that is displayed when activating this object (?)
+
+------------
+-- Type 27 -
+------------
+Type - Minigame
+Sound0: gameType
+
+------------
+-- Type 28 -
+------------
+Type: Lottery Kiosk (Probably meant to be another minigame)
+There are no Fields associated with this object.
+
+------------
+-- Type 29 -
+------------
+Type - Capture Flags(those that you need to hold, like in athrai basin, halaa,terrokar and more)
+Sound0: The activation radius (?)
+Sound1: Unknown, possibly a server-side dummy spell-effect. Not a SpellId from Spells.dbc
+Sound2: worldState1
+Sound3: worldstate2
+Sound4: winEventID1
+Sound5: winEventID2
+Sound6: contestedEventID1
+Sound7: contestedEventID2
+Sound8: progressEventID1
+Sound9: progressEventID2
+Sound10: neutralEventID1
+Sound11: neutralEventID2
+Sound12: neutralPercent
+Sound13: worldstate3
+Sound14: minSuperiority
+Sound15: maxSuperiority
+Sound16: minTime
+Sound17: maxTime
+Sound18: large
+Sound19: highlight
+
+------------
+-- Type 30 -
+------------
+Type - Gameobject that have aura to nearby players.
+Sound0: startOpen
+Sound1: Area of effect (?)
+Sound2: SpellId from Spells.dbc
+Sound3: conditionID1
+Sound4: SpellId from Spells.dbc
+Sound5: conditionID2
+Sound6: serverOnly
+
+------------
+-- Type 31 -
+------------
+Type - Instance Portals
+Sound0: MapId from Maps.dbc
+Sound1: Whether or not the dungeon is Heroic (?)
+				
+
+------------
+-- Type 33 -
+------------
+Type - Sieige Gameobjects probably.
+Sound0: go to state 1 (damage pct)
+Sound1: go to state 2 (damage pct)
+Sound2: state 1 name
+Sound3: state 2 name
+
+------------
+-- Type 34 -
+------------
+Type - Guild Bank.
+There are no Fields associated with this object.

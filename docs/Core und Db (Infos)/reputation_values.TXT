@@ -1,0 +1,6 @@
+0     <NONE>
+42000 Exalted
+21000 Revered
+12000 Honored
+6000  Friendly
+3000  Neutral

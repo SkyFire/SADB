@@ -1,0 +1,5 @@
+0 Self
+1 Enemy
+2 DESTINATION
+3 Atack Source
+4 Caster
