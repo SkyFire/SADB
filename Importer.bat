@@ -104,7 +104,7 @@ ECHO.
 ECHO [Importing] Changesets
 for %%C in (%changesets%\*.sql) do (
 	ECHO [Importing] %%~nxC
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world% < "%%~fC"
+	%mysqlpath%\mysql -h %server% --user=%user% --password=%pass% --port=%port% %world% < "%%~fC"
 )
 ECHO Changesets import completed!
 ECHO.
@@ -126,7 +126,7 @@ IF %ch%==a GOTO all_changesets
 ECHO      Importing...
 IF NOT EXIST "%changesets%\changeset_%ch%.sql" GOTO error2
 ECHO.
-%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world% < %changesets%\changeset_%ch%.sql
+%mysqlpath%\mysql -h %server% --user=%user% --password=%pass% --port=%port% %world% < %changesets%\changeset_%ch%.sql
 ECHO.
 ECHO      File changeset_%ch%.sql import completed
 ECHO.
@@ -139,7 +139,7 @@ ECHO.
 ECHO [Importing] Changesets
 for %%C in (%changesets%\*.sql) do (
 	ECHO [Importing] %%~nxC
-	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world% < "%%~fC"
+	%mysqlpath%\mysql -h %server% --user=%user% --password=%pass% --port=%port% %world% < "%%~fC"
 )
 ECHO Changesets import completed!
 ECHO.
@@ -150,7 +150,7 @@ GOTO menu
 CLS
 ECHO .
 ECHO Creating world database backup
-%mysqlpath%\mysqldump  --host=%host% --user=%user% --password=%pass% --port=%port% %world% --max_allowed_packet=1M >%backup%\world_backup.sql
+%mysqlpath%\mysqldump -h %server% --user=%user% --password=%pass% --port=%port% %world% --max_allowed_packet=1M >%backup%\world_backup.sql
 ECHO Done
 ECHO Your world database backup was saved in backups folder
 ECHO.
@@ -161,7 +161,7 @@ GOTO menu
 CLS
 ECHO .
 ECHO Creating characters database backup
-%mysqlpath%\mysqldump  --host=%host% --user=%user% --password=%pass% --port=%port% %chars% --max_allowed_packet=1M > %backup%\characters_backup.sql
+%mysqlpath%\mysqldump -h %server% --user=%user% --password=%pass% --port=%port% %chars% --max_allowed_packet=1M > %backup%\characters_backup.sql
 ECHO Done
 ECHO Your characters database backup was saved in backups folder
 ECHO.
@@ -172,7 +172,7 @@ GOTO menu
 CLS
 ECHO .
 ECHO Creating logon database backup
-%mysqlpath%\mysqldump  --host=%host% --user=%user% --password=%pass% --port=%port% %logon% --max_allowed_packet=1M > %backup%\logon_backup.sql
+%mysqlpath%\mysqldump -h %server% --user=%user% --password=%pass% --port=%port% %logon% --max_allowed_packet=1M > %backup%\logon_backup.sql
 ECHO Done
 ECHO Your world database backup was saved in backups folder
 ECHO.
