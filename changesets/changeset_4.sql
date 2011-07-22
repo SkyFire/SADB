@@ -14,6 +14,7 @@
 ALTER TABLE `items`  ADD COLUMN `ItemLimitCategory` INT(10) NULL DEFAULT '0' AFTER `ArmorDamageModifier`,  ADD COLUMN `HolidayId` INT(10) NULL DEFAULT '0' AFTER `ItemLimitCategory`;
 ALTER TABLE `gameobject_names` ADD COLUMN `defaultflags` INT(10) NULL DEFAULT '0' AFTER `spellfocus`;
 
+drop table if exists `lfd_rewards`;
 CREATE TABLE `lfd_rewards` (
   `dungeonid` int(10) unsigned NOT NULL DEFAULT '0',
   `comments` varchar(255) NOT NULL DEFAULT '',
