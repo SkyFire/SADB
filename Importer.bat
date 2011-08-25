@@ -100,15 +100,6 @@ ECHO [Importing] Started...
 ECHO [Importing] SADB database...
 %mysqlpath%\mysql -h %server% --user=%user% --password=%pass% --port=%port% %world% < %world_path%\world.sql
 ECHO [Importing] Database import was successful
-ECHO.
-ECHO [Importing] Changesets
-for %%C in (%changesets%\*.sql) do (
-	ECHO [Importing] %%~nxC
-	%mysqlpath%\mysql -h %server% --user=%user% --password=%pass% --port=%port% %world% < "%%~fC"
-)
-ECHO Changesets import completed!
-ECHO.
-ECHO You no need to import any changesets now.
 GOTO window_quit
 ECHO.
 PAUSE
