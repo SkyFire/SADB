@@ -27,10 +27,6 @@ ECHO.
 SET /p pass= Server user password: 
 ECHO.
 SET /p world= World database name: 
-ECHO.
-SET /p chars= Characters database name: 
-ECHO.
-SET /p logon= Logon database name: 
 REM ===========================================================================
 REM =
 REM =		DO NOT MODIFY THESE SETTINGS!
@@ -60,8 +56,6 @@ ECHO		  C = Import changesets
 ECHO		  X = Exit
 ECHO		==============================
 ECHO		 BW = Backup World database
-ECHO		 BC = Backup Characters database
-ECHO		 BL = Backup Logon database
 ECHO		==============================
 ECHO.
 SET /p Letter= Enter Letter:
@@ -87,11 +81,6 @@ IF %Letter%==bW GOTO backup_world
 IF %Letter%==bw GOTO backup_world
 IF %Letter%==Bw GOTO backup_world
 
-REM world db backup
-IF %Letter%==BC GOTO backup_characters
-IF %Letter%==Bc GOTO backup_characters
-IF %Letter%==bC GOTO backup_characters
-IF %Letter%==bc GOTO backup_characters
 GOTO error
 
 :world_import
@@ -148,28 +137,6 @@ ECHO.
 PAUSE
 GOTO menu
 
-:backup_characters
-CLS
-ECHO .
-ECHO Creating characters database backup
-%mysqlpath%\mysqldump -h %server% --user=%user% --password=%pass% --port=%port% %chars% --max_allowed_packet=1M > %backup%\characters_backup.sql
-ECHO Done
-ECHO Your characters database backup was saved in backups folder
-ECHO.
-PAUSE
-GOTO menu
-
-:backup_logon
-CLS
-ECHO .
-ECHO Creating logon database backup
-%mysqlpath%\mysqldump -h %server% --user=%user% --password=%pass% --port=%port% %logon% --max_allowed_packet=1M > %backup%\logon_backup.sql
-ECHO Done
-ECHO Your world database backup was saved in backups folder
-ECHO.
-PAUSE
-GOTO menu
-
 :error
 CLS
 ECHO.
@@ -188,5 +155,6 @@ PAUSE
 GOTO window_quit
 
 :window_quit
-ECHO Goodbye...
+ECHO Report any bugs in mhttp://mantis.sandshroud.org.
+ECHO Thanks!
 PAUSE
